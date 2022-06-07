@@ -1,0 +1,29 @@
+{{#extends 'container'}}
+
+{{#block 'content'}}
+
+<table class="table">
+<thead>
+    <tr>
+        <th>Description</th>
+        <th>Food</th>
+        <th>Date</th>
+    </tr>
+</thead>
+
+{{#each foodSightings}}
+<tr>
+    <td>{{this.description}}</td>
+    <td>{{this.food}}</td>
+    <td>{{this.datetime}}</td>
+    <td>
+        <a href='/food_sighting/edit/{{this._id}}'>
+    </td>
+</tr>
+{{/each}}
+
+</table>
+
+{{/block}}
+
+{{/extends}}

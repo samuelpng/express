@@ -1,0 +1,13 @@
+{{#extends 'base'}}
+{{#block 'content'}}
+
+<form method='POST'>
+    <div class="alert alert-danger">
+        Are you sure you want to delete the food sighting
+        {{foodSighting.description}} which was made on {{foodSighting.datetime}}
+    </div>
+    <input type="submit" value="ok" class="btn tbn-danger"/>
+    
+</form>
+{{/block}}
+{{/extends}}

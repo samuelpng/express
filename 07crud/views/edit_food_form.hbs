@@ -1,0 +1,16 @@
+{{#extends 'base'}}
+
+{{#block 'content'}}
+<form method="POST">
+<div>
+    <label>Description </label>
+    <input type="text" name="description" class="form-control" placeholder="Enter the list of fodd seperated by commas" value="{{description}}"/>
+    <label>Food </label>
+    <input type="text" name="food" class="form-control" placeholder="Food" value="{{food}}"/>
+    <label>Time </label>
+    <input type="datetime-local" name="time" class="form-control" placeholder="time" value="{{time}}"/>
+</div>
+</form>
+
+{{/block}}
+{{/extends}}

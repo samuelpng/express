@@ -1,0 +1,26 @@
+{{#extends "base"}}
+{{#block "content"}}
+
+<form method="POST">
+    <div class="mt-3"m></div>
+    <div>
+        <label>Enter your weight</label>
+        <input type="text" class="form-control mt-3" name="weight"/>
+    </div>
+    <div>
+        <label>Enter your height</label>
+        <input type="text" class="form-control mt-3" name="height"/>
+    </div>
+    <div>
+        <label>Unit of measurements</label>
+        <input type="radio" value="si" name="unit" class="form-check-iput" checked/>
+        <label>SI unit</label>
+        <input type="radio" value="imperial" name="unit" class="form-check-iput"/>
+        <label>Imperial unit</label>
+    </div>
+        <input type="submit" class="btn btn-warning mt-3" value="Submit">
+</form>
+
+
+{{/block}}
+{{/extends}}
